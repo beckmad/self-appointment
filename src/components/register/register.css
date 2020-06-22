@@ -1,0 +1,29 @@
+.register {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #424f51;
+    font-size: 16px;
+}
+
+.register__txt {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.register__btn {
+    color: #ff336d;
+    text-decoration: underline;
+    font-weight: bold;
+    border: none;
+    background: transparent;
+}
+
+.register__btn:active {
+    transform: translateY(1px);
+}

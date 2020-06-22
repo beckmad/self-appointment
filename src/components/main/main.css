@@ -1,0 +1,76 @@
+.main {
+    height: 442px;
+    width: 100%;
+    /*background: url("http://cdn.st.email4customers.com/lk/5a6ad191-1165-4274-a35d-5c7e68cf539a_фон.png") no-repeat #646669 center center;*/
+    background: url("bg.svg") #fff center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    /*background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);*/
+    /*background-size: 400% 400%;*/
+    /*animation: gradient 8s ease infinite;*/
+}
+
+.box {
+    max-width: 370px;
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    line-height: 1.1;
+
+}
+
+.box_headline {
+    font-weight: 700;
+}
+
+.box_headline--big {
+    font-size: 80px;
+}
+
+.box__btn {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+    /*background-color: #dc366b;*/
+    /*color: white;*/
+    /*border-color: #dc366b;*/
+    /*border-radius: 3px;*/
+}
+@media only screen and (max-width: 900px) {
+    .main {
+        -webkit-background-size: 200%;
+        background-size: 200%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .main {
+        -webkit-background-size: 300%;
+        background-size: 300%;
+    }
+    .box {
+        font-size: 28px;
+    }
+}
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
