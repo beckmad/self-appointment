@@ -5,12 +5,12 @@ import Register from '../register';
 import Iframe from '../iframe';
 import Main from '../main';
 import Footer from '../footer';
-//import LazyLoad from '../lazy-load';
 import Error from '../error';
 
 import './app.css';
 import 'animate.css/animate.min.css'
 
+// TODO kill magic numbers
 
 export default class App extends Component {
   state = {
@@ -21,7 +21,6 @@ export default class App extends Component {
   repApi = new Rep();
 
   registerClick = () => {
-    console.log('firstClick');
     this.setState((state) => {
       return {regPage: !state.regPage};
     });
@@ -65,16 +64,9 @@ export default class App extends Component {
           console.error(`PeopleList doesn't initiation. Error: ${e}`);
         });
     }
-    console.log('componentDidMount');
-  };
-
-  componentDidCatch() {
-    console.log('componentDidCatch');
-    // this.setState({error: true});
   };
 
   render() {
-    console.log('render: ', this.state, '\n', 'localStorage: ', localStorage);
     const {regPage, error, link} = this.state;
     const content = error ? <Error/> : <Iframe visibility={regPage} link={link}/>;
     return (

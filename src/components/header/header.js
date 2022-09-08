@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.css'
-// import Error from "../error";
 
 const Header = ({visibility}) => {
   if (visibility) return null;
